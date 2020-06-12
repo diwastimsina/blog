@@ -5,13 +5,17 @@ import javax.persistence.*;
 @Entity
 public class Blog {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+   // @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String title;
     private String content;
 
 
-    public Blog(String title, String content) {  }
+    public Blog(String title, String content) {
+        this.title = title;
+        this.content = content;
+
+    }
 
     public Blog(int id, String title, String content) {
         this.setId(id);

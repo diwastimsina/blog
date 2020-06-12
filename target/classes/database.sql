@@ -1,7 +1,0 @@
---CREATE DATABASE restapi;
---USE restapi;
---CREATE TABLE blog (
---  id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
---  title VARCHAR(255) NOT NULL,
---  content VARCHAR(255) NOT NULL
---);

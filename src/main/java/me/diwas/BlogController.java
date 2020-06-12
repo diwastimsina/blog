@@ -34,7 +34,8 @@ public class BlogController {
     public Blog create(@RequestBody Map<String, String> body){
         String title = body.get("title");
         String content = body.get("content");
-        return blogRespository.save(new Blog(title, content));
+        Integer id = Integer.valueOf(body.get("id"));
+        return blogRespository.save(new Blog(id, title, content));
     }
 
     @PutMapping("/blog/{id}")
